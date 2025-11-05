@@ -1,0 +1,98 @@
+[
+    {
+        "id": "9d9ec1f3-6c14-47e1-9534-bab53b662a6c",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "create",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": " author_id | name | email \n-----------+------+-------\n(0 rows)\n\n post_id | author_id | title | content | created_at \n---------+-----------+-------+---------+------------\n(0 rows)\n\n tag_id | name \n--------+------\n(0 rows)\n\n post_id | tag_id \n---------+--------\n(0 rows)",
+        "type": "stdout"
+    },
+    {
+        "id": "d95951bf-822d-40da-a0b4-8357290e5f73",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "check_1",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": "ERROR:  duplicate key value violates unique constraint \"authors_email_key\"\nDETAIL:  Key (email)=(alice@example.com) already exists.\nERROR:  current transaction is aborted, commands ignored until end of transaction block",
+        "type": "stdout"
+    },
+    {
+        "id": "afbd89ec-6b09-46e9-9b7b-a28b76090727",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "check_2",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": "ERROR:  insert or update on table \"posts\" violates foreign key constraint \"posts_author_id_fkey\"\nDETAIL:  Key (author_id)=(999) is not present in table \"authors\".\nERROR:  current transaction is aborted, commands ignored until end of transaction block",
+        "type": "stdout"
+    },
+    {
+        "id": "ef7ef0e5-4531-477c-abe2-6a59c86e86f6",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "check_3",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": "ERROR:  duplicate key value violates unique constraint \"tags_name_key\"\nDETAIL:  Key (name)=(database) already exists.\nERROR:  current transaction is aborted, commands ignored until end of transaction block",
+        "type": "stdout"
+    },
+    {
+        "id": "43010c93-f69c-4af8-991b-6d63c9c6de44",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "check_4",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": "ERROR:  insert or update on table \"posts\" violates foreign key constraint \"posts_author_id_fkey\"\nDETAIL:  Key (author_id)=(1) is not present in table \"authors\".\nERROR:  current transaction is aborted, commands ignored until end of transaction block\nERROR:  current transaction is aborted, commands ignored until end of transaction block\nERROR:  current transaction is aborted, commands ignored until end of transaction block\nERROR:  current transaction is aborted, commands ignored until end of transaction block",
+        "type": "stdout"
+    },
+    {
+        "id": "8caa68d8-1e5e-4807-9c88-d3296eca6b98",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "check_5",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": "ERROR:  null value in column \"title\" of relation \"posts\" violates not-null constraint\nDETAIL:  Failing row contains (3, 2, null, null, 2025-10-19 14:35:39.995995).\nERROR:  current transaction is aborted, commands ignored until end of transaction block",
+        "type": "stdout"
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "572e05b4-5608-4bf6-8a8d-63c4b479118c",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "small join",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": "Unexpected tuples:\nEmpty DataFrame\nColumns: [A, B, C, D, E]\nIndex: []\n===\nMissing tuples:\nEmpty DataFrame\nColumns: [A, B, C, D, E]\nIndex: []",
+        "type": "stdout"
+    },
+    {
+        "id": "fe53c79c-22cb-46d4-a9c8-05ad6570f4d1",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "large join",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": "Unexpected tuples:\nEmpty DataFrame\nColumns: [A, B, C, D, E, F, X, Y, Z]\nIndex: []\n===\nMissing tuples:\nEmpty DataFrame\nColumns: [A, B, C, D, E, F, X, Y, Z]\nIndex: []",
+        "type": "stdout"
+    }
+]

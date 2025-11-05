@@ -1,0 +1,66 @@
+[
+    {
+        "id": "a3963177-fb33-49a3-bd32-0c6ce4c6232c",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "output_1",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": " count \n-------\n   275\n(1 row)",
+        "type": "stdout"
+    },
+    {
+        "id": "8e8d7970-28f8-4575-961b-525bd3650971",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "check_2",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": " count \n-------\n  3503\n(1 row)",
+        "type": "stdout"
+    },
+    {
+        "id": "f9209626-3211-4e15-b6b8-2d3b64100176",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "query_3.sql",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": " count \n-------\n    18\n(1 row)",
+        "type": "stdout"
+    },
+    {
+        "id": "c34573f9-ba23-45bd-8217-434645ae6f13",
+        "directives": {
+            "solution": null,
+            "masterOnly": null,
+            "workUnit": null,
+            "check": true,
+            "test": null,
+            "title": "first row",
+            "grade": 1.0,
+            "match": "exact",
+            "normalize": null
+        },
+        "text": "(1, 'AC/DC')",
+        "type": "stdout"
+    }
+]
